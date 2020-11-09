@@ -4,6 +4,6 @@ import postsRoutes from './posts.routes'
 
 const routes = Router()
 
-routes.use('/post', postsRoutes)
+routes.use('/posts', postsRoutes)
 
 export default routes
