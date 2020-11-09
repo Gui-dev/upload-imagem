@@ -9,9 +9,9 @@ const postController = new PostController()
 
 const upload = multer(multerConfig)
 
-postsRoutes.get('', postController.index)
+postsRoutes.get('/', postController.index)
 
-postsRoutes.post('', upload.single('file'), postController.create)
+postsRoutes.post('/', upload.single('file'), postController.create)
 
 postsRoutes.delete('/:id', postController.delete)
 
